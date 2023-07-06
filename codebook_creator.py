@@ -8,10 +8,10 @@ from scipy.io import wavfile
 from python_speech_features import mfcc, logfbank
 from scipy.cluster.vq import vq, kmeans, whiten
 
-BASE_DATAPATH = "/Users/ananth/research/public_datasets/tf_asr/train/audio"
-STOP_PATH = os.path.join(BASE_DATAPATH, "stop")
-DOWN_PATH = os.path.join(BASE_DATAPATH, "down")
-GO_PATH = os.path.join(BASE_DATAPATH, "go")
+BASE_DATAPATH = "data"
+STOP_PATH = "data\stop"
+DOWN_PATH = "data\down"
+GO_PATH = "data\go"
 
 
 def collect_training_data(label, num_files):

@@ -15,10 +15,10 @@ from codebook_creator import create_mfcc_dataset_for_codebook, collect_training_
 from myhmm_scaled import MyHmmScaled
 
 model_file_name = r"./models/a.json"
-BASE_DATAPATH = "/Users/ananth/research/public_datasets/tf_asr/train/audio"
-STOP_PATH = os.path.join(BASE_DATAPATH, "stop")
-DOWN_PATH = os.path.join(BASE_DATAPATH, "down")
-GO_PATH = os.path.join(BASE_DATAPATH, "go")
+BASE_DATAPATH = "data"
+STOP_PATH = "data\stop"
+DOWN_PATH = "data\down"
+GO_PATH = "data\go"
 
 
 def create_initial_model(num_states, num_symbols, model_name=None):

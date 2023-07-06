@@ -31,7 +31,7 @@ if __name__ == '__main__':
         label = input("Enter label (go, stop, q): ")
         if label == "q":
             break
-        index = random.randint(0, 499)
+        index = random.randint(0, 114)
         test_file = test[label][index]
         print("Testing for ", test_file, ", Expected label: ", label)
         vecs = get_mfcc_vectors([test_file])
