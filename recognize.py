@@ -32,7 +32,13 @@ if __name__ == '__main__':
         if label == "q":
             break
         index = random.randint(0, 649)
-        test_file = test[label][index]
+        while True:
+            try:
+                test_file = test[label][index]
+                break
+            except IndexError:
+                index = random.randint(0, 649)
+                continue
         print("Testing for ", test_file, ", Expected label: ", label)
         vecs = get_mfcc_vectors([test_file])
         obs = get_obs(vecs, book)
